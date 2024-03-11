@@ -1,12 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import MenuIcon from '../images/menu.svg'
-import { preLoadAnim } from '../animation';
+
 
 const Navbar = () => {
 
-    useEffect(() => {
-        preLoadAnim();
-    })
 
     return (
     <div className="navbar-container">
