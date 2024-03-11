@@ -1,10 +1,18 @@
-
+import Navbar from "./components/Navbar"
+import Main from "./components/Main"
+import About from "./components/About"
+import './styles/main.css'
 
 function App() {
 
   return (
     <>
-    Hello motherfucker
+      <Navbar/>
+      <Main />
+      
+      <section>
+        <About/>
+      </section>
     </>
   )
 }
