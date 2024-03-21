@@ -28,7 +28,7 @@ const Languages = () => {
     <div className="languages">
       <div className="languages__text">
         <h5>Languages</h5>
-        <p className="langues__text-desktop">
+        <p className="languages__text-desktop">
           I've had the opportunity to work with a variety of programming
           languages during my studies. Some of these I'm still actively
           learning, while others have become core parts of my skillset.
