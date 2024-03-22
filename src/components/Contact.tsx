@@ -36,12 +36,12 @@ const Contact = () => {
 
   return (
     <Form {...form}>
-      <h3 className="text-white">Contact Me</h3>
+      <h3 className="text-white mt-10">Contact Me</h3>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 text-white w-full flex justify-center"
       >
-        <div className="contact flex-col gap-8">
+        <div className="contact flex flex-col gap-6">
           <FormField
             control={form.control}
             name="username"
@@ -80,19 +80,20 @@ const Contact = () => {
             control={form.control}
             name="message"
             render={({ field }) => (
-              <FormItem className="w-full border h-full">
+              <FormItem className="w-full h-full">
+                <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea
                     placeholder="Message"
                     {...field}
-                    className="h-40"
+                    className="h-60"
                   />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <Button variant="ghost" className="w-full bg-white text-black mb-8" type="submit">
+          <Button className="w-full bg-white text-black mb-10 hover:bg-neutral-600 hover:text-white" type="submit">
             Send
           </Button>
         </div>

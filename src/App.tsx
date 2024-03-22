@@ -3,7 +3,6 @@ import Main from "./components/Main";
 import About from "./components/About";
 import Languages from "./components/Languages";
 import Contact from "./components/Contact";
-import "./styles/main.css";
 import "../app/globals.css"
 import Timeline from "./components/TImeline";
 
