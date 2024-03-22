@@ -169,7 +169,7 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .about__text p {
@@ -208,7 +208,6 @@ header p {
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  border: 1px solid white;
   text-align: center;
 }
 
@@ -218,9 +217,7 @@ header p {
   height: 0;
 }
 
-.languages_carousel {
-  position: relative;
-  
+.languages_carousel {  
   padding: 0rem 3rem 0rem 3rem;
 }
 
@@ -229,6 +226,7 @@ header p {
   height: 250px;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
 }
 
@@ -386,6 +384,7 @@ textarea {
     align-items: center;
   }
 
+  
   .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -413,14 +412,27 @@ textarea {
 
   .languages {
     display: grid;
-    grid-template-columns: auto max-content;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
-  .languages__carousel { grid-area: 1 / 2 / 3 / 3; }
-  .languages__text { grid-area: 1 / 1 / 2 / 2; } 
+  .languages__carousel { 
+    grid-area: 1 / 2 / 3 / 3; 
+    height: 100%;
+    width: 100%;
+  }
+  .languages__text { 
+    grid-area: 1 / 1 / 2 / 2; 
+    height: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem 0rem 4rem;
+    gap: 2rem;
+  } 
 
   .languages__text-desktop{
     visibility: visible;
@@ -429,7 +441,18 @@ textarea {
   }
 
   .languages__image-container, .languages__image-container img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+  }
+
+  .languages__button{
+    height: 60px;
+    width: 60px;
+  }
+
+  .languages__button img{
+    height: 100%;
+    width: 100%;
   }
 }

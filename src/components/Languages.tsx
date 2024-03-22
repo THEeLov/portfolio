@@ -45,18 +45,18 @@ const Languages = () => {
               />
             ))}
           </div>
-        </div>
-        <div
-          className="languages__button languages__button--primary"
-          onClick={goToPreviousImage}
-        >
-          <img src={LeftButton} alt="prev" />
-        </div>
-        <div
-          className="languages__button languages__button--secondary"
-          onClick={goToNextImage}
-        >
-          <img src={RightButton} alt="prev" />
+          <div
+            className="languages__button languages__button--primary"
+            onClick={goToPreviousImage}
+          >
+            <img src={LeftButton} alt="prev" />
+          </div>
+          <div
+            className="languages__button languages__button--secondary"
+            onClick={goToNextImage}
+          >
+            <img src={RightButton} alt="prev" />
+          </div>
         </div>
       </div>
     </div>
