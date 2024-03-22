@@ -11,6 +11,7 @@ const Languages = () => {
   const [index, setIndex] = useState(0);
 
   const images = [Javascript, Python, C, Java, Haskell];
+  const names = ["Javascript", "Python", "C", "Java", "Haskell"]
 
   const goToNextImage = () => {
     setIndex((prevIndex) =>
@@ -58,6 +59,7 @@ const Languages = () => {
             <img src={RightButton} alt="prev" />
           </div>
         </div>
+        <p>{names[index]}</p>
       </div>
     </div>
   );

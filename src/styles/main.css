@@ -211,15 +211,20 @@ header p {
   text-align: center;
 }
 
+.languages_carousel{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .languages__text-desktop {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.languages_carousel {  
-  padding: 0rem 3rem 0rem 3rem;
-}
 
 .languages__image-container {
   width: 250px;
@@ -228,6 +233,7 @@ header p {
   justify-content: center;
   position: relative;
   align-items: center;
+  flex-direction: column;
 }
 
 .languages__image-slider {
@@ -235,7 +241,7 @@ header p {
   height: 100%;
   overflow: hidden;
   box-shadow: 0 2px 36px rgb(41, 41, 41);
-  border-radius: 6em;
+  border-radius: 4rem;
   display: flex;
 }
 
@@ -249,14 +255,13 @@ header p {
 
 .languages__button {
   position: absolute;
-  top: 40%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 100%;
   border-radius: 1em;
 }
 
 .languages__button:hover {
-  background-color: rgba(58, 58, 58, 0.76);
+  background-color: rgba(29, 27, 27, 0.164);
 }
 
 .languages__button img {
@@ -418,11 +423,14 @@ textarea {
     grid-row-gap: 0px;
     }
     
-  .languages__carousel { 
+  .languages_carousel { 
     grid-area: 1 / 2 / 3 / 3; 
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
+
   .languages__text { 
     grid-area: 1 / 1 / 2 / 2; 
     height: 100%;
@@ -441,14 +449,28 @@ textarea {
   }
 
   .languages__image-container, .languages__image-container img{
-    height: 300px;
-    width: 300px;
-    border: 1px solid white;
+    height: 350px;
+    width: 350px;
   }
 
   .languages__button{
-    height: 60px;
-    width: 60px;
+    height: 100%;
+    width: 70px;
+    top:0;
+  }
+
+  .languages__button--primary{
+    border-top-left-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+  }
+
+  .languages__button--secondary{
+    border-top-right-radius: 7rem;
+    border-bottom-right-radius: 7rem;
+  }
+
+  .languages__button:hover{
+    background-color: rgba(0, 0, 0, 0.356);
   }
 
   .languages__button img{
