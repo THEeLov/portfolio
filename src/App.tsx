@@ -3,19 +3,21 @@ import Main from "./components/Main";
 import About from "./components/About";
 import Languages from "./components/Languages";
 import Contact from "./components/Contact";
-import "../app/globals.css"
+import "../app/globals.css";
 import Timeline from "./components/TImeline";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
-      <Main />
+      <section id="home" className="w-full h-full">
+        <Main />
+      </section>
       <div className="hr">
         <hr />
       </div>
 
-      <section className="about-section">
+      <section id="about" className="about-section">
         <About />
       </section>
 
@@ -25,10 +27,11 @@ function App() {
         <hr />
       </div>
 
-      <section className="timeline-section">
+      <section id="timeline" className="timeline-section">
         <Timeline />
       </section>
-      <Contact />
+
+        <Contact />
     </div>
   );
 }

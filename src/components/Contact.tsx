@@ -17,8 +17,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea"
 
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
-  email: z.string().min(2).max(50),
+  username: z.string().min(1).max(50),
+  email: z.string().email(),
   message: z.string(),
 });
 
@@ -30,18 +30,17 @@ const Contact = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-  }
-
   return (
     <Form {...form}>
-      <h3 className="text-white mt-10">Contact Me</h3>
+      <h3 id="contact" className="text-white mt-10">Contact Me</h3>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 text-white w-full flex justify-center"
+        action="https://api.web3forms.com/submit"
+        method="POST"
       >
+        <input type="hidden" name="access_key" value="15265a61-f3b9-4fad-b942-a2d7c28d4a06"></input>
         <div className="contact flex flex-col gap-6">
+          
           <FormField
             control={form.control}
             name="username"

@@ -29,13 +29,19 @@ const Main = () => {
         <div className="header__icons-container">
           <div className="header__icons">
             <div className="header__icon-container">
-              <img src={Facebook} alt="facebook" />
+              <a href="https://www.facebook.com/filipeto.kozik" target="_blank">
+                <img src={Facebook} alt="facebook" />
+              </a>
             </div>
             <div className="header__icon-container">
-              <img src={Mail} alt="facebook" />
+              <a href="kozik.fifo@gmail.com" target="_blank">
+                <img src={Mail} alt="email" />
+              </a>
             </div>
             <div className="header__icon-container">
-              <img src={Gitlab} alt="facebook" />
+              <a href="https://gitlab.fi.muni.cz/xkozik" target="_blank">
+                <img src={Gitlab} alt="gitlab" />
+              </a>
             </div>
           </div>
         </div>
