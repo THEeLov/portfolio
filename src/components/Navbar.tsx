@@ -1,6 +1,3 @@
-import { useEffect, useRef } from "react";
-import MenuIcon from "../images/menu.svg";
-
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { PhoneArrowUpRightIcon } from "@heroicons/react/20/solid";
 import { UserIcon } from "@heroicons/react/16/solid";
