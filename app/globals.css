@@ -149,7 +149,7 @@ body {
 }
 
 .navbar-desktop{
-  transform: translate(-170%, 0);
+  transform: translate(-165%, 0);
 }
 
 .option{
@@ -518,8 +518,8 @@ header p {
   }
 
   .languages__image-container, .languages__image-container img{
-    height: 350px;
-    width: 350px;
+    height: 370px;
+    width: 370px;
   }
 
   .languages__button{
