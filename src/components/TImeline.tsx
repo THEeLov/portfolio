@@ -96,19 +96,13 @@ const TImeline = () => {
         <p>
           Courses i have taken:
           <ul style={{ listStyle: "none" }}>
-            <li>
-              ?&nbsp;&nbsp;&nbsp;Design and Implementation of Parallel Systems
-            </li>
-            <li>
-              ?&nbsp;&nbsp;&nbsp;Basics of web development and markup languages
-            </li>
-            <li>?&nbsp;&nbsp;&nbsp;Information security and cryptography </li>
-            <li>?&nbsp;&nbsp;&nbsp;Java</li>
-            <li>
-              ?&nbsp;&nbsp;&nbsp;Design and analysis of statistical experiments
-            </li>
-            <li>?&nbsp;&nbsp;&nbsp;Introduction to Informatics </li>
-            <li>?&nbsp;&nbsp;&nbsp;Project managment and project</li>
+            <li>{repeat}Design and Implementation of Parallel Systems</li>
+            <li>{repeat}Basics of web development and markup languages</li>
+            <li>{repeat}Information security and cryptography </li>
+            <li>{repeat}Java</li>
+            <li>{repeat}Design and analysis of statistical experiments</li>
+            <li>{repeat}Introduction to Informatics </li>
+            <li>{repeat}Project managment and project</li>
           </ul>
         </p>
       </VerticalTimelineElement>

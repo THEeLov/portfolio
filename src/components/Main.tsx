@@ -1,7 +1,7 @@
 import MyPhoto from "../images/my_photo_nt.jpeg";
 import Facebook from "../images/facebook.svg";
 import Mail from "../images/gmail.svg";
-import Gitlab from "../images/gitlab.svg";
+import GitHub from "../images/github.svg";
 
 const Main = () => {
   return (
@@ -34,13 +34,13 @@ const Main = () => {
               </a>
             </div>
             <div className="header__icon-container">
-              <a href="kozik.fifo@gmail.com" target="_blank">
-                <img src={Mail} alt="email" />
+              <a href="#contact">
+                <img src={Mail} alt="email" title="kozik.fifo@gmail.com"/>
               </a>
             </div>
             <div className="header__icon-container">
-              <a href="https://gitlab.fi.muni.cz/xkozik" target="_blank">
-                <img src={Gitlab} alt="gitlab" />
+              <a href="https://github.com/THEeLov" target="_blank">
+                <img src={GitHub} alt="gitlab"/>
               </a>
             </div>
           </div>
