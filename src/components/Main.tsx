@@ -19,7 +19,7 @@ const Main = () => {
             <h1>I'm Filip</h1>
             <h2>Computer Science Student</h2>
             <p>
-              Motivated second-year student studying Programming and Application
+              Motivated third-year student studying Programming and Application
               Development. Actively seeking internship opportunities to sharpen
               my skills and gain hands-on experience in the industry.
             </p>
