@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container flex items-center mt-8 w-full justify-center">
       <div className="navbar-desktop h-20 w-20 flex fixed top-6 z-10">
-        <div className="border rounded-full w-fit h-full flex gap-10 px-8">
+        <div className="border rounded-full w-fit h-full flex gap-10 px-8 navbar-backdrop">
           <div className="option h-full flex items-center">
             <a href="#home" className="w-full h-full flex items-center">
               <HomeIcon className="fill-white h-2/4" />
