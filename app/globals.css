@@ -553,3 +553,12 @@ header p {
     width: 100%;
   }
 }
+
+.projectCard {
+  transition: transform 0.1s ease-in-out, opacity 
+}
+
+.projectCard:hover {
+  opacity: 0.4;
+  transform: scale(0.98);
+}

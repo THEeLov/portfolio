@@ -2,9 +2,9 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import About from "./components/About";
 import Languages from "./components/Languages";
-import Contact from "./components/Contact";
 import "../app/globals.css";
 import Timeline from "./components/TImeline";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -31,7 +31,9 @@ function App() {
         <Timeline />
       </section>
 
-        <Contact />
+      <section id="projects" className="w-full h-full p-10">
+        <Projects />
+      </section>
     </div>
   );
 }
