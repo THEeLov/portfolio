@@ -1,5 +1,4 @@
 import { HomeIcon } from "@heroicons/react/24/solid";
-import { PhoneArrowUpRightIcon } from "@heroicons/react/20/solid";
 import { UserIcon } from "@heroicons/react/16/solid";
 import { AcademicCapIcon } from "@heroicons/react/16/solid";
 import { CommandLineIcon } from "@heroicons/react/16/solid";
