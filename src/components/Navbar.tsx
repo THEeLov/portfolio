@@ -2,6 +2,7 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import { PhoneArrowUpRightIcon } from "@heroicons/react/20/solid";
 import { UserIcon } from "@heroicons/react/16/solid";
 import { AcademicCapIcon } from "@heroicons/react/16/solid";
+import { CommandLineIcon } from "@heroicons/react/16/solid";
 
 const Navbar = () => {
   return (
@@ -24,8 +25,8 @@ const Navbar = () => {
             </a>
           </div>
           <div className="option h-full flex items-center">
-            <a href="#contact" className="w-full h-full flex items-center">
-              <PhoneArrowUpRightIcon className="fill-white h-2/4" />
+            <a href="#projects" className="w-full h-full flex items-center">
+              <CommandLineIcon className="fill-white h-2/4" />
             </a>
           </div>
         </div>
