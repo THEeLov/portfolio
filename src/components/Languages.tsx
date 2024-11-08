@@ -6,9 +6,11 @@ import Javascript from "../images/javascript.webp";
 import LeftButton from "../images/left-button.svg";
 import RightButton from "../images/right-button.svg";
 import { useState } from "react";
+import useInViewAnimation from "@/hooks/useAnimations";
 
 const Languages = () => {
   const [index, setIndex] = useState(0);
+  const { isInView: isTextInView, elementRef: textRef } = useInViewAnimation();
 
   const images = [Javascript, Python, C, Java, Haskell];
   const names = ["Javascript", "Python", "C", "Java", "Haskell"]
@@ -29,7 +31,7 @@ const Languages = () => {
     <div className="languages">
       <div className="languages__text">
         <h5>Languages</h5>
-        <p className="languages__text-desktop">
+        <p className={`languages__text-desktop ${isTextInView ? "motion-preset-slide-down-left-sm" : ""}`} ref={textRef}>
           I've had the opportunity to work with a variety of programming
           languages during my studies. Some of these I'm still actively
           learning, while others have become core parts of my skillset.

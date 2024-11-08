@@ -26,6 +26,7 @@
     "react-vertical-timeline-component": "^3.6.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-motion": "^0.4.1-beta",
     "zod": "^3.22.4"
   },
   "devDependencies": {

@@ -16,9 +16,9 @@ const Main = () => {
         <div className="header__text-container">
           <div className="header__text">
             <p>Hey</p>
-            <h1>I'm Filip</h1>
+            <h1 className="motion-preset-confetti">I'm Filip 👋</h1>
             <h2>Computer Science Student</h2>
-            <p>
+            <p className="motion-scale-in-[0.5] motion-rotate-in-[-10deg] motion-blur-in-[10px] motion-delay-[0.75s]/rotate motion-delay-[0.75s]/blur">
               Motivated third-year student studying Programming and Application
               Development. Actively seeking internship opportunities to sharpen
               my skills and gain hands-on experience in the industry.
